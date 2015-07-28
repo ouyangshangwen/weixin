@@ -1,6 +1,6 @@
 # coding=utf-8
 """
-    WiFi Web 应用入口
+    应用入口
     =================
 
 """
@@ -17,7 +17,7 @@ from configs import AppSettings
 from handlers import  weixin_api
 
 # Options
-define("port", default=9982, help="run on the given port", type=int)
+define("port", default=9994, help="run on the given port", type=int)
 
 
 
@@ -25,6 +25,7 @@ class Application(tornado.web.Application):
     def __init__(self):
         handlers = [
             (r"/", weixin_api.WechatCallbackAPI),
+            (r"/userinfo", weixin_api.UserInfoHandler)
 
 
         ]
