@@ -5,5 +5,6 @@ class AppSettingsDefault(object):
 
     '''
 
-    appid = "APPID"
-    secret = "SECRET"
+    APPID = "APPID"
+    SECRET = "SECRET"
+    TOKEN =  "TOKEN"
