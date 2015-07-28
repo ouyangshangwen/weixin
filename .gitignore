@@ -1,2 +1,4 @@
 .DS_Store
+.idea
 *.py[cod]
+settings_local.py
